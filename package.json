@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "bun --minify --outfile=dist/index.js --target=browser build src/main.ts",
+    "build:docs": "bun --minify --outfile=docs/index.js --target=browser build src/main.ts",
     "serve": "bun --sourcemap=inline --outfile=dist/index.js --target=browser --watch build src/main.ts"
   },
   "devDependencies": {

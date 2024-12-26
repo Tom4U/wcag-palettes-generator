@@ -1,0 +1,128 @@
+:root {
+    --swatch-size: 32px;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-canvas);
+    color: var(--color-neutral);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-accent);
+}
+
+input[type="text"] {
+    background-color: var(--color-baseline);
+    border: 1px solid var(--color-accent);
+    color: var(--color-canvas);
+    font-size: 1.2rem;
+    outline: 2px solid var(--color-accent);
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--color-accent);
+    color: var(--color-canvas);
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+#container {
+    width: 800px;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 32px;
+
+    header {
+        height: 64px;
+        line-height: 64px;
+    }
+
+    main {
+        flex: 2;
+
+        #data {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        #tabs {
+            ul {
+                list-style: none;
+                display: flex;
+                width: fit-content;
+                gap: 8px;
+                justify-content: space-between;
+                font-size: 1.2rem;
+                border-bottom: 1px solid black;
+                padding: 0;
+
+                .tab {
+                    border: 1px solid black;
+                    border-bottom: none;
+                    border-radius: 5px 5px 0 0;
+                    padding: 4px;
+                    cursor: pointer;
+                    color: var(--color-canvas);
+                    background-color: var(--color-accent-subdued);
+
+                    &:hover, &.active {
+                        background-color: lightgrey;
+                    }
+
+                    &.active {
+                        cursor: default;
+                        background-color: var(--color-baseline);
+                    }
+                }
+            }
+        }
+
+        .palette {
+            display: none;
+            padding: 0 32px;
+
+            &.active {
+                display: inherit;
+            }
+
+            .colors-group-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+    
+                .color-group {
+                    p {
+                        display: grid;
+                        align-items: center;
+                        gap: 8px;
+                        grid-template-columns: 48px auto 150px;
+        
+                        .swatch {
+                            display: inline-block;
+                            height: var(--swatch-size);
+                            width: var(--swatch-size);
+                            border: 1px solid black;
+                            border-radius: var(--swatch-size);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
