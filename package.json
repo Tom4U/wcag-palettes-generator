@@ -1,0 +1,19 @@
+{
+  "name": "tom4u-color-palette",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun --minify --outfile=dist/index.js --target=browser build src/main.ts",
+    "serve": "bun --sourcemap=inline --outfile=dist/index.js --target=browser --watch build src/main.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/color": "^4.2.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "color": "^4.2.3"
+  }
+}
