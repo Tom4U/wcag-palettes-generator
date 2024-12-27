@@ -17,7 +17,7 @@ jobs:
           node-version: 20
       - uses: oven-sh/setup-bun@v2
       - run: bun test
-      - run: bun run build:docs  
+      - run: bun run build  
 
   publish-gpr:
     needs: build
