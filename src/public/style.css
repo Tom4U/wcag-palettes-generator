@@ -41,6 +41,8 @@ button {
     gap: 32px;
 
     header {
+        display: flex;
+        align-items: center;
         height: 64px;
         line-height: 64px;
 
