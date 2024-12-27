@@ -3,13 +3,16 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build": "bun --minify --outfile=dist/index.js --target=browser build src/main.ts",
-    "build:docs": "bun --minify --outfile=docs/index.js --target=browser build src/main.ts",
-    "serve": "bun --sourcemap=inline --outfile=dist/index.js --target=browser --watch build src/main.ts"
+    "build": "bun build.ts",
+    "serve": "bun build-ts --serve"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/color": "^4.2.0"
+    "@types/chalk": "^2.2.4",
+    "@types/color": "^4.2.0",
+    "chalk": "^5.4.1",
+    "cpy": "^11.1.0",
+    "glob": "^11.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.7.2"
