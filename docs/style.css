@@ -43,6 +43,12 @@ button {
     header {
         height: 64px;
         line-height: 64px;
+
+        .github {
+            position: fixed;
+            right: 32px;
+            top: 32px;
+        }
     }
 
     main {
