@@ -1,5 +1,7 @@
 # WCAG-Compliant Palette Generator
 
+[![pages-build-deployment](https://github.com/Tom4U/wcag-palettes-generator/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Tom4U/wcag-palettes-generator/actions/workflows/pages/pages-build-deployment)
+
 This small web app was inspired by an [article on Medium]() written by [Francis Wu](https://medium.com/@thisisfranciswu).
 
 It generates color palettes using WCAG 2.1 compliant colors and setting the other colors by just changing brightness or alpha channel to a specific color contrast. All based on an initial seed color.
