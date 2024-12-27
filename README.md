@@ -12,4 +12,4 @@ Some seed colors may work better than others.
 
 I believe it's quite impressive, and anyone willing to improve it is welcome to do so. 😄
 
-A GitHub page is available for exploring and utilizing it.
+A [GitHub page](https://tom4u.github.io/wcag-palettes-generator) is available for exploring and utilizing it.
